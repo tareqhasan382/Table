@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       {
         path: "table",
         element: <Table> </Table>,
-        //loader: () => fetch("http://localhost:5000/users"),
+        //loader: () => fetch("https://t-server-9mew5zhwx-tareqhasan382.vercel.app/users"),
       }
     ],
   },
@@ -60,12 +60,12 @@ const router = createBrowserRouter([
         <AddUser></AddUser>
       </PrivateRoute>
     ),
-    loader: () => fetch("http://localhost:5000/users"),
+    loader: () => fetch("https://t-server-9mew5zhwx-tareqhasan382.vercel.app/users"),
   },
   {
     path: "admin",
     element: <PrivateRoute><Adminbar></Adminbar></PrivateRoute> ,
-    loader: () => fetch("http://localhost:5000/users"),
+    loader: () => fetch("https://t-server-9mew5zhwx-tareqhasan382.vercel.app/users"),
   },
   {
     path: "/update/:id",
@@ -74,7 +74,7 @@ const router = createBrowserRouter([
         <UpdateUser></UpdateUser>
       </PrivateRoute>
     ),
-    loader: ({params}) =>fetch(`http://localhost:5000/users/${params.id}`)
+    loader: ({params}) =>fetch(`https://t-server-9mew5zhwx-tareqhasan382.vercel.app/users/${params.id}`)
   },
   {
     path:"*",
