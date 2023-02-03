@@ -15,7 +15,7 @@ const UpdateUser = () => {
   //InsertedCount  getInsertedCount   http://localhost:5000/users/${params.id}   http://localhost:5000/users/${params.id}
   const onSubmit = (data) => {
     console.log(data)
-    fetch(`http://localhost:5000/users/${update._id}`,{
+    fetch(`https://t-server-9mew5zhwx-tareqhasan382.vercel.app/users/${update._id}`,{
       method:"PUT",
       headers:{
         'content-type':'application/json'
