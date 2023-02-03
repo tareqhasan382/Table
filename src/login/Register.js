@@ -25,7 +25,7 @@ const Register = () => {
         console.log(user);
         toast("user created successfully.");
 
-        fetch("http://localhost:5000/registation", {
+        fetch("https://t-server-9mew5zhwx-tareqhasan382.vercel.app/registation", {
         method: "POST",
         headers: {
           "content-type": "application/json",
