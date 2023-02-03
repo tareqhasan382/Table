@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    
+}
+.sidebar{
+   
+}
+.sidewrapper{
+    position: relative;
+    width: 320px;
+    height: 100vh;
+    position: sticky;
+    background-color: blueviolet;
+}
+.other{
+ background-color: rgb(142, 139, 146);
+ 
+}

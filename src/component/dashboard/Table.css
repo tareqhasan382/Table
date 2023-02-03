@@ -1,0 +1,54 @@
+.table-box{
+    text-align: center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%; 
+    text-align: center;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .pagination{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 320px;
+    bottom: 1px solid black;
+  }
+
+  /*
+ margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    gap: 1px;
+  */
+  .pagination .page-num{
+      padding: 3px 3px;
+      cursor: pointer;
+      /* border-radius: 3px; */
+      font-weight: 400;
+      bottom: 1px solid black;
+
+  }
+  .pagination .page-num:hover{
+    /* background-color: blueviolet; */
+    color: rgb(206, 8, 153);
+  }
+  .pagination .active{
+    background-color: blueviolet;
+  }
