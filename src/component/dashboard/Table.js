@@ -22,7 +22,7 @@ const Table = (props) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/users?email=${signIn?.email}`, {
+      .get(`https://t-server-9mew5zhwx-tareqhasan382.vercel.app/users?email=${signIn?.email}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("access-token")}`,
         },
@@ -43,7 +43,7 @@ const Table = (props) => {
     const agree = window.confirm(`Are you Sure ? want to delete: ${item.name}`);
     //console.log(agree);
     if (agree) {
-      fetch(`http://localhost:5000/users/${item._id}`, {
+      fetch(`https://t-server-9mew5zhwx-tareqhasan382.vercel.app/users/${item._id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
