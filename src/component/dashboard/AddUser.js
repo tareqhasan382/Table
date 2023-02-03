@@ -16,7 +16,7 @@ const AddUser = () => {
   } = useForm();
   //InsertedCount  "http://localhost:5000/users" getInsertedCount `http://localhost:5000/users?email=${signIn.email}`
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/users", data).then((res) => {
+    axios.post("https://t-server-9mew5zhwx-tareqhasan382.vercel.app/users", data).then((res) => {
       if (res.data.acknowledged) {
         alert("Added Successfully");
         reset();
